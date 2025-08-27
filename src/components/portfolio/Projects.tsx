@@ -1,122 +1,3 @@
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
-// import { ExternalLink, Github } from "lucide-react";
-// import property from "@/assets/property.avif";
-// import wedding from "@/assets/Wedding.jpg";
-
-// const Projects = () => {
-//   const projects = [
-//     {
-//       title: "Wedding Invitation Website",
-//       description:
-//         "A personalized digital wedding invitation with event details, RSVP management, and an elegant design for guests.",
-//       technologies: ["React", "Node.js"],
-//       liveUrl: "https://invitation.h-digitalsolutions.com/",
-//       image: wedding,
-//     },
-//     {
-//       title: "Property Management System",
-//       description:
-//         "A platform for managing rental properties with tenant tracking, lease management, and automated payment reminders.",
-//       technologies: ["TypeScript", "React", "Tailwind CSS"],
-//       liveUrl: "https://demo.faspro24.com",
-//       githubUrl: "#",
-//       image: property,
-//     },
-//   ];
-
-//   return (
-//     <section id="projects" className="py-20 bg-secondary/30">
-//       <div className="max-w-6xl mx-auto px-4">
-//         <div className="text-center mb-12">
-//           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
-//           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-//             Here are some of the projects I've worked on that demonstrate my
-//             skills and experience in software development.
-//           </p>
-//         </div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-//           {projects.map((project, index) => (
-//             <Card
-//               key={index}
-//               className="group hover:shadow-lg transition-all duration-300"
-//             >
-//               <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
-//                 <img
-//                   src={project.image}
-//                   alt={project.title}
-//                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-//                 />
-//               </div>
-
-//               <CardHeader>
-//                 <CardTitle className="text-xl">{project.title}</CardTitle>
-//                 <CardDescription>{project.description}</CardDescription>
-//               </CardHeader>
-
-//               <CardContent>
-//                 <div className="flex flex-wrap gap-2 mb-4">
-//                   {project.technologies.map((tech, techIndex) => (
-//                     <Badge key={techIndex} variant="secondary">
-//                       {tech}
-//                     </Badge>
-//                   ))}
-//                 </div>
-
-//                 {/* Live Demo Button */}
-//                 {project.liveUrl && project.liveUrl !== "#" && (
-//                   <div className="mt-4">
-//                     <a
-//                       href={project.liveUrl}
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                     >
-//                       <Button size="sm" className="flex items-center gap-2">
-//                         <ExternalLink className="w-4 h-4" />
-//                         Go to our web
-//                       </Button>
-//                     </a>
-//                   </div>
-//                 )}
-
-//                 {/* Source Code Button */}
-//                 {project.githubUrl && project.githubUrl !== "#" && (
-//                   <div className="mt-2">
-//                     <a
-//                       href={project.githubUrl}
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                     >
-//                       <Button
-//                         size="sm"
-//                         variant="outline"
-//                         className="flex items-center gap-2"
-//                       >
-//                         <Github className="w-4 h-4" />
-//                         Source Code
-//                       </Button>
-//                     </a>
-//                   </div>
-//                 )}
-//               </CardContent>
-//             </Card>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Projects;
-
 import {
   Card,
   CardContent,
@@ -128,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
-import property from "@/assets/property.avif";
+import ngo from "@/assets/Ngo.jpg";
 import wedding from "@/assets/Wedding.jpg";
 
 const Projects = () => {
@@ -138,17 +19,17 @@ const Projects = () => {
       description:
         "A personalized digital wedding invitation with event details, RSVP management, and an elegant design for guests.",
       technologies: ["React", "Node.js", "Next.js"],
-      liveUrl: "https://invitation.h-digitalsolutions.com/",
+      liveUrl: "https://mariage-psi-three.vercel.app/",
       image: wedding,
     },
     {
-      title: "Property Management System",
+      title: "Jan Hoffmann NGO",
       description:
-        "A platform for managing rental properties with tenant tracking, lease management, and automated payment reminders.",
+        "We are a non-profit organization dedicated to fostering a supportive community where we actively help and uplift one another.",
       technologies: ["TypeScript", "React", "Tailwind CSS"],
-      liveUrl: "https://demo.faspro24.com",
+      liveUrl: "https://organisation-lac.vercel.app/",
       githubUrl: "#",
-      image: property,
+      image: ngo,
     },
   ];
 
